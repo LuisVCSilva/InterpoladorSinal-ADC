@@ -38,7 +38,7 @@ int main () {
 		if(flagImpressao==0x00)//Comeca o processamento
 		{
 			printf("Serao lidos %d valores\n",tamanhoAmostragem);
-			_delay_ms(atrasoEntreLeituras);
+			_delay_ms(atrasoEntreLeituras);//simula sensores com ksps(kilosamples per second) diferentes
 			for(int i=0;i<tamanhoAmostragem;i++)
 			{
 			leitorADC = ReadADC(0);
